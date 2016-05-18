@@ -17,6 +17,7 @@ body {
     border: 1px solid #ccc;
     padding: 20px;
     margin: 30px 0 30px 0;
+    background-color: red;
 }
 .container a {
     color: #454545;
