@@ -1,4 +1,4 @@
-        <div class="footer"></div>
+        <div class="footer">Disclaimer</div>
     </div><!-- close class="wrapper" -->
 
 </body>
