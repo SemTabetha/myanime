@@ -5,19 +5,28 @@ body {
     background-color: rgb(230, 230, 230);
 }
 .wrapper {
-    width: 960px;
+    width: 60%;
     margin: 0 auto;
+    background-color: grey;
 }
 
+.logo{
+    width: 30%;
+    background-color: purple;
+    text-align: center;
+    margin:0;
+    padding:0;
+}
     /* To keep this project compact, we show a base64-encoded image, not a real file. */
     /* Excellent base64-encoders and more information here: http://base64image.org and http://www.base64-image.de */
     
 .container {
-    max-width: 960px;
+    max-width: 100%;
     border: 1px solid #ccc;
     padding: 20px;
-    margin: 30px 0 30px 0;
-    background-color: red;
+    margin: 0 0 30px 0;
+    background-color: darkgrey;
+
 }
 .container a {
     color: #454545;
@@ -71,12 +80,19 @@ body {
     /* btw this is necessary to remove most browsers's "hidden" default <ul> intent */
     margin: 0;
     padding: 0;
+    float: right;
 }
 /* TODO */
 .navigation {
 }
 .navigation.right {
-    float: right;
+    position: fixed;
+    top: 0px;
+    left:86%;
+    z-index:10;
+}
+#button-acc{
+    padding: 10px 43px 10px 43px;
 }
 .navigation li {
     float: left;
