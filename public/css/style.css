@@ -7,12 +7,12 @@ body {
 .wrapper {
     width: 60%;
     margin: 0 auto;
-    background-color: grey;
+    background-color: white;
 }
 
 .logo{
     width: 30%;
-    background-color: purple;
+    background-color: rgb(135,222,48);
     text-align: center;
     margin:0;
     padding:0;
@@ -270,4 +270,21 @@ body {
 /* error page */
 .red-text {
     color: red;
+}
+
+/*footer*/
+.disclaimer{
+    position: fixed;
+}
+.disclaimertext{
+    display: none;
+}
+.disclaimer:hover .disclaimertext{
+    display: block;
+    background-color: #8FD400;
+    border: 1px solid black;
+}
+.logo h2 {
+    margin: 0;
+    padding: 0;
 }
