@@ -17,6 +17,11 @@ body {
     margin:0;
     padding:0;
 }
+
+.logo h2 {
+    margin: 0;
+    padding: 0;
+}
     /* To keep this project compact, we show a base64-encoded image, not a real file. */
     /* Excellent base64-encoders and more information here: http://base64image.org and http://www.base64-image.de */
     
@@ -274,17 +279,7 @@ body {
 
 /*footer*/
 .disclaimer{
-    position: fixed;
-}
-.disclaimertext{
-    display: none;
-}
-.disclaimer:hover .disclaimertext{
-    display: block;
-    background-color: #8FD400;
-    border: 1px solid black;
-}
-.logo h2 {
-    margin: 0;
-    padding: 0;
+    background-color: rgb(135,222,48);
+    text-decoration: none;
+    color: black;
 }
