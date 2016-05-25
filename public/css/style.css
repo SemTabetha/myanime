@@ -93,7 +93,7 @@ body {
 .navigation.right {
     position: fixed;
     top: 0px;
-    left:86%;
+    right: 5%;
     z-index:10;
 }
 #button-acc{
@@ -282,4 +282,8 @@ body {
     background-color: rgb(135,222,48);
     text-decoration: none;
     color: black;
+    position: fixed;
+    top: 98%;
+    right: 2%;
+    z-index:10;
 }
