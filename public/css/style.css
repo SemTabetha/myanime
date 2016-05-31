@@ -7,20 +7,30 @@ body {
 .wrapper {
     width: 60%;
     margin: 0 auto;
-    background-color: white;
 }
 
 .logo{
     width: 30%;
-    background-color: rgb(135,222,48);
-    text-align: center;
+    background-color: white;
     margin:0;
     padding:0;
+    float: left;
+    border-left: 5px gray solid;
+    border-top: 5px gray solid;
+    border-right: 5px gray solid;
+    margin-left:2%;
 }
 
-.logo h2 {
-    margin: 0;
-    padding: 0;
+.logo img {
+    height: 140px;
+    width: 100%;
+}
+
+.banner img{
+    margin-left: -5px;
+    border: 5px gray solid;
+    height: 350px;
+    width:100%;
 }
     /* To keep this project compact, we show a base64-encoded image, not a real file. */
     /* Excellent base64-encoders and more information here: http://base64image.org and http://www.base64-image.de */
@@ -91,17 +101,34 @@ body {
 .navigation {
 }
 .navigation.right {
+    margin-top:-3px;
     position: fixed;
     top: 0px;
     right: 5%;
     z-index:10;
 }
+.navigation-log {
+    margin-top:-3px;
+    position: fixed;
+    top: 0px;
+    right: 10%;
+    z-index:10;
+}
+.navigation-reg {
+    margin-top:-3px;
+    position: fixed;
+    top: 0px;
+    right: 5%;
+    z-index:10;
+}
+
 #button-acc{
     padding: 10px 43px 10px 43px;
 }
 .navigation li {
     float: left;
     margin-right: 5px;
+    margin-bottom: 0;
 }
 .navigation .navigation-submenu {
     display: none;
@@ -110,7 +137,8 @@ body {
     display: block;
     text-decoration: none;
     padding: 10px 15px;
-    border: 2px solid #454545;
+    border: 4px gray solid;
+
     background: #454545;
     color: #fff;
     float:none;
