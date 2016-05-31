@@ -12,6 +12,7 @@
 </head>
 <body>
     <!-- my account -->
+    
     <ul class="navigation right">
     <?php if (Session::userIsLoggedIn()) : ?>
         <li <?php if (View::checkForActiveController($filename, "user")) { echo ' class="active" '; } ?> >
@@ -46,11 +47,11 @@
         <?php endif; ?>
     <?php endif; ?>
     </ul>
-    <!-- wrapper, to center website -->
+    <!-- wrapper -->
     <div class="wrapper">
 
         <!-- logo -->
-        <div class="logo"><h2>MyAnime</h2></div>
+        <div class="logo"><img src="http://www.semzee.dvc-icta.nl/pic/myanimelogo.png" alt=""></div>
 
         <!-- navigation -->
         <ul class="navigation">
@@ -69,13 +70,14 @@
                 </li>
             <?php } else { ?>
                 <!-- for not logged in users -->
-                <li <?php if (View::checkForActiveControllerAndAction($filename, "login/index")) { echo ' class="active" '; } ?> >
+                <li class="navigation-log"<?php if (View::checkForActiveControllerAndAction($filename, "login/index")) { echo ' class="active" '; } ?> >
                     <a href="<?php echo Config::get('URL'); ?>login/index">Login</a>
                 </li>
-                <li <?php if (View::checkForActiveControllerAndAction($filename, "register/index")) { echo ' class="active" '; } ?> >
+                <li class="navigation-reg"<?php if (View::checkForActiveControllerAndAction($filename, "register/index")) { echo ' class="active" '; } ?> >
                     <a href="<?php echo Config::get('URL'); ?>register/index">Register</a>
                 </li>
             <?php } ?>
         </ul>
-
+    <!-- banner -->
+    <div class="banner"><img src="http://www.semzee.dvc-icta.nl/pic/header.jpg" alt=""></div>
         
