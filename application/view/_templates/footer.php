@@ -1,8 +1,8 @@
-        <div class="footer">Footer</div>
+        <div class="footer"><a href="#" class="footertext">Disclaimer</a>
+        					<p class="copyright">Copyright ©</p>
+		</div><!-- close class="footer"  -->
         </div><!-- close class="wrapper" -->
-		<div class="ending">
-			<a href="#" class="disclaimer">Disclaimer</a>
-		</div>
+			
 
 </body>
 </html>

@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     font-weight: 400;
     font-size: 14px;
-    background-color: rgb(230, 230, 230);
+    background-color: #f4f3f1;
 }
 .wrapper {
     width: 60%;
@@ -15,9 +15,10 @@ body {
     margin:0;
     padding:0;
     float: left;
-    border-left: 5px gray solid;
-    border-top: 5px gray solid;
-    border-right: 5px gray solid;
+    border-left: 2px gray solid;
+    border-top: 2px gray solid;
+    border-right: 2px gray solid;
+    box-shadow: 5px 3px 5px gray;
     margin-left:2%;
 }
 
@@ -27,20 +28,23 @@ body {
 }
 
 .banner img{
-    margin-left: -5px;
-    border: 5px gray solid;
+    margin-left: -3px;
+    border: 2px gray solid;
+    box-shadow: 3px 1px 5px gray;
     height: 350px;
     width:100%;
+    z-index: 5;
 }
     /* To keep this project compact, we show a base64-encoded image, not a real file. */
     /* Excellent base64-encoders and more information here: http://base64image.org and http://www.base64-image.de */
     
 .container {
     max-width: 100%;
-    border: 1px solid #ccc;
+    border: 1px solid gray;
     padding: 20px;
-    margin: 0 0 30px 0;
-    background-color: darkgrey;
+    margin: 0 0 0 0;
+    background-color: white;
+    z-index: 10;
 
 }
 .container a {
@@ -137,9 +141,9 @@ body {
     display: block;
     text-decoration: none;
     padding: 10px 15px;
-    border: 4px gray solid;
+    border: 2px gray solid;
 
-    background: #454545;
+    background: black;
     color: #fff;
     float:none;
     font-size: 10px;
@@ -209,7 +213,7 @@ body {
 
 .login-box {
     display: table-cell;
-    margin: 0;
+    margin-left: 25%;
     color: #777;
     background-color: #f4f3f1;
     padding: 20px 50px 45px 50px;
@@ -234,9 +238,9 @@ body {
     /*text-transform: uppercase;*/
 }
 .login-box input[type="submit"] {
-    color: #777;
-    background-color: transparent;
-    border: 2px solid #777;
+    color:  white;
+    background-color: rgb(135,222,48);
+    border: 2px solid gray;
     padding: 15px 20px;
     margin-bottom: 10px;
     display: block;
@@ -306,16 +310,35 @@ body {
 }
 
 /*footer*/
-.disclaimer{
-    background-color: rgb(135,222,48);
-    text-decoration: none;
-    color: black;
-    position: fixed;
-    top: 98%;
-    right: 2%;
-    z-index:10;
+
+.footer{
+    background: repeating-linear-gradient(
+    45deg,
+    rgb(135,222,48),
+    rgb(135,222,48) 10px,
+    #fff 10px,
+    #fff 20px
+    );
+    height: 50px;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
 }
 
-.ending{
-    
+.footertext{
+    text-decoration: none;
+    color: black;
+    font-size: 85%;
+    float: left;
+    margin: 16px 20px 0 43%;
 }
+
+.copyright{
+    text-decoration: none;
+    color: black;
+    font-size: 85%;
+    margin: 0;
+    padding-top: 16px;
+}
+
+
