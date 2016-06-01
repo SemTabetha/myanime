@@ -2,7 +2,13 @@ body {
     font-family: Arial, sans-serif;
     font-weight: 400;
     font-size: 14px;
-    background-color: #f4f3f1;
+    background: repeating-linear-gradient(
+    45deg,
+    #f2f2f2,
+    #f2f2f2 10px,
+    #fff 10px,
+    #fff 20px
+    );
 }
 .wrapper {
     width: 60%;
@@ -10,27 +16,27 @@ body {
 }
 
 .logo{
-    width: 30%;
-    background-color: white;
+    width: 25%;
+    background-color: #fff;
     margin:0;
     padding:0;
     float: left;
-    border-left: 2px gray solid;
-    border-top: 2px gray solid;
-    border-right: 2px gray solid;
-    box-shadow: 5px 3px 5px gray;
+    border-left: 2px #c0c0c0 solid;
+    border-top: 2px #c0c0c0 solid;
+    border-right: 2px #c0c0c0 solid;
+    box-shadow: 4px 0px 5px gray;
     margin-left:2%;
 }
 
 .logo img {
-    height: 140px;
-    width: 100%;
+    padding: 2% 2% 2% 2%;
+    width: 96%;
 }
 
 .banner img{
-    margin-left: -3px;
-    border: 2px gray solid;
-    box-shadow: 3px 1px 5px gray;
+    margin-left: -2px;
+    border: 2px #c0c0c0 solid;
+    box-shadow: 4px 0px 5px gray;
     height: 350px;
     width:100%;
     z-index: 5;
@@ -40,10 +46,10 @@ body {
     
 .container {
     max-width: 100%;
-    border: 1px solid gray;
+    border: 1px solid #c0c0c0;
     padding: 20px;
     margin: 0 0 0 0;
-    background-color: white;
+    background-color: #fff;
     z-index: 10;
 
 }
@@ -141,7 +147,7 @@ body {
     display: block;
     text-decoration: none;
     padding: 10px 15px;
-    border: 2px gray solid;
+    border: 2px #c0c0c0 solid;
 
     background: black;
     color: #fff;
@@ -320,9 +326,9 @@ body {
     #fff 20px
     );
     height: 50px;
-    border-left: 1px solid gray;
-    border-right: 1px solid gray;
-    border-bottom: 1px solid gray;
+    border-left: 1px solid #c0c0c0;
+    border-right: 1px solid #c0c0c0;
+    border-bottom: 1px solid #c0c0c0;
 }
 
 .footertext{
