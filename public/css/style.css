@@ -9,7 +9,9 @@ body {
     #fff 10px,
     #fff 20px
     );
+    background-attachment: fixed;
 }
+
 .wrapper {
     width: 60%;
     margin: 0 auto;
@@ -18,12 +20,11 @@ body {
 .logo{
     width: 25%;
     background-color: #fff;
-    margin:0;
+    margin-bottom:-36px;
     padding:0;
-    float: left;
-    border-left: 2px #c0c0c0 solid;
-    border-top: 2px #c0c0c0 solid;
-    border-right: 2px #c0c0c0 solid;
+    border-left: 2px black solid;
+    border-top: 2px black solid;
+    border-right: 2px black solid;
     box-shadow: 4px 0px 5px gray;
     margin-left:2%;
 }
@@ -35,7 +36,7 @@ body {
 
 .banner img{
     margin-left: -2px;
-    border: 2px #c0c0c0 solid;
+    border: 2px black solid;
     box-shadow: 4px 0px 5px gray;
     height: 350px;
     width:100%;
@@ -46,12 +47,11 @@ body {
     
 .container {
     max-width: 100%;
-    border: 1px solid #c0c0c0;
+    border: 1px solid black;
     padding: 20px;
     margin: 0 0 0 0;
     background-color: #fff;
     z-index: 10;
-
 }
 .container a {
     color: #454545;
@@ -133,7 +133,7 @@ body {
 }
 
 #button-acc{
-    padding: 10px 43px 10px 43px;
+    padding: 10px 44px 10px 44px;
 }
 .navigation li {
     float: left;
@@ -147,8 +147,8 @@ body {
     display: block;
     text-decoration: none;
     padding: 10px 15px;
-    border: 2px #c0c0c0 solid;
-
+    border: 2px black solid;
+    margin-bottom: -2px;
     background: black;
     color: #fff;
     float:none;
@@ -221,7 +221,7 @@ body {
     display: table-cell;
     margin-left: 25%;
     color: #777;
-    background-color: #f4f3f1;
+    background-color: #fff;
     padding: 20px 50px 45px 50px;
     width: 49%;
     box-sizing: border-box;
@@ -326,9 +326,9 @@ body {
     #fff 20px
     );
     height: 50px;
-    border-left: 1px solid #c0c0c0;
-    border-right: 1px solid #c0c0c0;
-    border-bottom: 1px solid #c0c0c0;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 .footertext{
