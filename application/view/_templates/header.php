@@ -11,47 +11,48 @@
     <link rel="stylesheet" href="<?php echo Config::get('URL'); ?>css/style.css" />
 </head>
 <body>
-    <!-- my account -->
     
-    <ul class="navigation right">
-    <?php if (Session::userIsLoggedIn()) : ?>
-        <li <?php if (View::checkForActiveController($filename, "user")) { echo ' class="active" '; } ?> >
-            <a href="<?php echo Config::get('URL'); ?>user/index" id="button-acc">My Account</a>
-            <ul class="navigation-submenu">
-                <li <?php if (View::checkForActiveController($filename, "user")) { echo ' class="active" '; } ?> >
-                    <a href="<?php echo Config::get('URL'); ?>user/changeUserRole">Change account type</a>
-                </li>
-                <li <?php if (View::checkForActiveController($filename, "user")) { echo ' class="active" '; } ?> >
-                    <a href="<?php echo Config::get('URL'); ?>user/editAvatar">Edit your avatar</a>
-                </li>
-                <li <?php if (View::checkForActiveController($filename, "user")) { echo ' class="active" '; } ?> >
-                    <a href="<?php echo Config::get('URL'); ?>user/editusername">Edit my username</a>
-                </li>
-                <li <?php if (View::checkForActiveController($filename, "user")) { echo ' class="active" '; } ?> >
-                    <a href="<?php echo Config::get('URL'); ?>user/edituseremail">Edit my email</a>
-                </li>
-                <li <?php if (View::checkForActiveController($filename, "user")) { echo ' class="active" '; } ?> >
-                    <a href="<?php echo Config::get('URL'); ?>user/changePassword">Change Password</a>
-                </li>
-                <li <?php if (View::checkForActiveController($filename, "login")) { echo ' class="active" '; } ?> >
-                    <a href="<?php echo Config::get('URL'); ?>login/logout">Logout</a>
-                </li>
-            </ul>
-        </li>
-        <?php if (Session::get("user_account_type") == 7) : ?>
-            <li <?php if (View::checkForActiveController($filename, "admin")) {
-                echo ' class="active" ';
-            } ?> >
-                <a href="<?php echo Config::get('URL'); ?>admin/">Admin</a>
-            </li>
-        <?php endif; ?>
-    <?php endif; ?>
-    </ul>
     <!-- wrapper -->
     <div class="wrapper">
-
-        <!-- logo -->
+    <!-- logo -->
         <div class="logo"><img src="http://www.semzee.dvc-icta.nl/pic/myanimelogo.png" alt=""></div>
+        <!-- my account -->
+        
+        <ul class="navigation right">
+        <?php if (Session::userIsLoggedIn()) : ?>
+            <li <?php if (View::checkForActiveController($filename, "user")) { echo ' class="active" '; } ?> >
+                <a href="<?php echo Config::get('URL'); ?>user/index" id="button-acc">My Account</a>
+                <ul class="navigation-submenu">
+                    <li <?php if (View::checkForActiveController($filename, "user")) { echo ' class="active" '; } ?> >
+                        <a href="<?php echo Config::get('URL'); ?>user/changeUserRole">Change account type</a>
+                    </li>
+                    <li <?php if (View::checkForActiveController($filename, "user")) { echo ' class="active" '; } ?> >
+                        <a href="<?php echo Config::get('URL'); ?>user/editAvatar">Edit your avatar</a>
+                    </li>
+                    <li <?php if (View::checkForActiveController($filename, "user")) { echo ' class="active" '; } ?> >
+                        <a href="<?php echo Config::get('URL'); ?>user/editusername">Edit my username</a>
+                    </li>
+                    <li <?php if (View::checkForActiveController($filename, "user")) { echo ' class="active" '; } ?> >
+                        <a href="<?php echo Config::get('URL'); ?>user/edituseremail">Edit my email</a>
+                    </li>
+                    <li <?php if (View::checkForActiveController($filename, "user")) { echo ' class="active" '; } ?> >
+                        <a href="<?php echo Config::get('URL'); ?>user/changePassword">Change Password</a>
+                    </li>
+                    <li <?php if (View::checkForActiveController($filename, "login")) { echo ' class="active" '; } ?> >
+                        <a href="<?php echo Config::get('URL'); ?>login/logout">Logout</a>
+                    </li>
+                </ul>
+            </li>
+            <?php if (Session::get("user_account_type") == 7) : ?>
+                <li <?php if (View::checkForActiveController($filename, "admin")) {
+                    echo ' class="active" ';
+                } ?> >
+                    <a href="<?php echo Config::get('URL'); ?>admin/">Admin</a>
+                </li>
+            <?php endif; ?>
+        <?php endif; ?>
+        </ul>
+        
 
         <!-- navigation -->
         <ul class="navigation">
