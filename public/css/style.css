@@ -358,7 +358,7 @@ body {
     transform: translate(-50%, -50%); 
     display: table-cell;
     color: white;
-    background-color: gray;
+    background-color: black;
     padding: 20px 50px 45px 50px;
     width: 50%;
     box-sizing: border-box;
@@ -433,10 +433,6 @@ body {
    height: 100%;
 }
 
-.captcha-input{
-   background-color: pink; 
-}
-  
 .create-box ::-webkit-input-placeholder { color: #777; opacity: 0.5; }
 .create-box ::-moz-placeholder { color: #777; opacity: 0.5; }
 .create-box :-ms-input-placeholder { color: #777; opacity: 0.5; }
