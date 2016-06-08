@@ -365,12 +365,11 @@ body {
     transform: translate(-50%, -50%); 
     display: table-cell;
     color: white;
-    background-color: rgb(64, 64, 64);
+    background-color: black;
     padding: 20px 50px 45px 50px;
     width: 50%;
     box-sizing: border-box;
     font-weight: 400;
-    text-transform: uppercase;
 }
 .create-box h2 {
     color: white;
@@ -384,7 +383,7 @@ body {
     margin-bottom: 20px;
     display: block;
     width: 358px;
-    border: 2px solid rgb(135,222,48);
+    /*border: 2px solid rgb(135,222,48);*/
     
 }
 
@@ -411,20 +410,20 @@ body {
     font-size: 30px;
     position: absolute;
     top: 50%;
-    color: red;
+    color: white;
     background-color: rgb(135,222,48);
-    border: 2px solid gray;
     padding: 30px 25px;
-    margin-top: 4%;
+    margin-top: 4.5%;
     margin-left: 49%;
     display: block;
     width: 41%;
-    border-radius: 35px;
+    border-color: black;
+    border-radius: 20px;
 }
 .create-box input[type="submit"]:hover {
-    color: red;
-    border-color: rgb(135,222,48) ;
-    background-color: yellow;
+    color: white;
+    border: 2px solid white;
+    background-color: rgb(102, 176, 28);
 }
 
 .create-box a{
@@ -432,8 +431,7 @@ body {
 }
 
 .captcha{
-    border: 2px solid rgb(135,222,48);
-    width: 388px;
+    width: 391px;
     height: 100px;
     margin-bottom: 5px;
 }
@@ -457,7 +455,7 @@ body {
     border-top: 2px black solid;
     border-right: 2px black solid;
     box-shadow: 4px 0px 5px gray;
-    margin-top:8%;
+    margin-top:6%;
     margin-left: 10%;
 }
 

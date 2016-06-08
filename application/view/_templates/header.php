@@ -17,7 +17,7 @@
     <!-- wrapper -->
     <div class="wrapper">
     <!-- logo -->
-        <div class="logo"><img src="http://www.semzee.dvc-icta.nl/pic/myanimelogo.png" alt=""></div>
+        <div class="logo"><a href="<?php echo Config::get('URL'); ?>index/index"><img src="http://www.semzee.dvc-icta.nl/pic/myanimelogo.png" alt=""></a></div>
         <!-- my account -->
         
         <ul class="navigation right">
