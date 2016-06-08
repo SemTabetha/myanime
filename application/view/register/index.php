@@ -5,10 +5,11 @@
 
     <!-- login box on left side -->
 <div class="wrapper">
-    <div class="register-logo"><img src="http://www.semzee.dvc-icta.nl/pic/myanimelogo.png" alt=""></div>
+    <div class="register-logo"><a href="<?php echo Config::get('URL'); ?>index/index"><img src="http://www.semzee.dvc-icta.nl/pic/myanimelogo.png" alt=""></a></div>
+
     <div class="create-box">
 
-    <div class="kirito-left">
+    <div class="kirito-right">
         
     </div>
         <h2>Create a new account for free!</h2>
@@ -31,8 +32,9 @@
                 <img class="captcha-img" id="captcha" src="<?php echo Config::get('URL'); ?>register/showCaptcha" />
             </div>
             <input class="captcha-input" type="text" name="captcha" placeholder="Please enter above characters" required />
-            <input type="submit" value="Register" />
+            <input type="submit" value="Sign Up" />
         </form>
     </div>
+</div>
 <!-- close wrapper -->
 </div>
