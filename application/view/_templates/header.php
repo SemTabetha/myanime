@@ -11,9 +11,7 @@
     <link rel="stylesheet" href="<?php echo Config::get('URL'); ?>css/style.css" />
 </head>
 <body>
-    <div class="gumi">
-    <img src="http://www.semzee.dvc-icta.nl/pic/gumi.png" alt="">
-    </div>
+    
     <!-- wrapper -->
     <div class="wrapper">
     <!-- logo -->
