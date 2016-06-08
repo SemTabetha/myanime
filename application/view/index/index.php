@@ -15,4 +15,11 @@
             this text you are reading right now.
         </p>
     </div>
+    <div class="box" id="about-us">
+        <h2>About us</h2>
+        <img class="" src="http://www.semzee.dvc-icta.nl/pic/tracer-icon.png" alt="">
+        <img class="" src="http://www.semzee.dvc-icta.nl/pic/tracer-icon.png" alt="">
+    </div>
+    
 </div>
+<img src="http://www.semzee.dvc-icta.nl/pic/asunabg.png" alt="">
