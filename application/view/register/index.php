@@ -4,8 +4,6 @@
     <?php $this->renderFeedbackMessages(); ?>
 
     <!-- login box on left side -->
-<div class="wrapper">
-    <div class="register-logo"><img src="http://www.semzee.dvc-icta.nl/pic/myanimelogo.png" alt=""></div>
     <div class="create-box">
         <h2>Register a new account</h2>
 
@@ -22,16 +20,15 @@
                 <input class="right" type="password" name="user_password_repeat" pattern=".{6,}" required placeholder="Repeat your password" autocomplete="off" />
             </div>
             <!-- show the captcha by calling the login/showCaptcha-method in the src attribute of the img tag -->
-            <a href="#" onclick="document.getElementById('captcha').src = '<?php echo Config::get('URL'); ?>register/showCaptcha?' + Math.random(); return false">Reload Captcha</a>
             <div class="captcha">
                 <img class="captcha-img" id="captcha" src="<?php echo Config::get('URL'); ?>register/showCaptcha" />
             </div>
             <input class="captcha-input" type="text" name="captcha" placeholder="Please enter above characters" required />
 
             <!-- quick & dirty captcha reloader -->
-            
+            <a href="#" onclick="document.getElementById('captcha').src = '<?php echo Config::get('URL'); ?>register/showCaptcha?' + Math.random(); return false">Reload Captcha</a>
 
-            <input class="register-button" type="submit" value="Sign Up" />
+            <input type="submit" value="Register" />
         </form>
     </div>
-</div><!-- close class="wrapper" -->
+</div>
