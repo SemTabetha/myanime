@@ -16,8 +16,13 @@
     </div>
     <div class="box" id="about-us">
         <h1>About us</h1>
-        <img class="" src="http://www.semzee.dvc-icta.nl/pic/tracer-icon.png" alt="">
-        <img class="" src="http://www.semzee.dvc-icta.nl/pic/tracer-icon.png" alt="">
+        <div class="team" id="killian">
+            <h3>LightningLuxio</h3>
+        </div>
+        <div class="team" id="sem">
+            <img class="" src="http://www.semzee.dvc-icta.nl/pic/tracer-icon.png" alt="">
+            <h3>Tabetha</h3>
+        </div>
     </div>
     
 </div>
