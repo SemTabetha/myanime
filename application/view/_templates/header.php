@@ -54,8 +54,6 @@
             <?php endif; ?>
         <?php endif; ?>
         </ul>
-        
-
         <!-- navigation -->
         <ul class="navigation">
             <li <?php if (View::checkForActiveController($filename, "index")) { echo ' class="active" '; } ?> >
@@ -70,6 +68,9 @@
                 </li>
                 <li <?php if (View::checkForActiveController($filename, "note")) { echo ' class="active" '; } ?> >
                     <a href="<?php echo Config::get('URL'); ?>note/index">My Notes</a>
+                </li>
+                <li <?php if (View::checkForActiveController($filename, "chat")) { echo ' class="active" '; } ?> >
+                    <a href="<?php echo Config::get('URL'); ?>chat/index" target="_blank" >Chatroom</a>
                 </li>
             <?php } else { ?>
                 <!-- for not logged in users -->
