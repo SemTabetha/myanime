@@ -1,25 +1,23 @@
 <div class="container">
-    <h1>IndexController/index</h1>
-    <div class="box">
-
+    <h1>Genre</h1>
+    <div class="box" id="icons">
         <!-- echo out the system feedback (error and success messages) -->
         <?php $this->renderFeedbackMessages(); ?>
-
-        <h3>What happens here ?</h3>
-        <p>
-            This is the homepage. As no real URL-route (like /register/index) is provided, the app uses the default
-            controller and the default action, defined in application/config/config.php, by default it's
-            IndexController and index()-method. So, the app will load application/controller/IndexController.php and
-            run index() from that file. Easy. That index()-method (= the action) has just one line of code inside
-            ($this->view->render('index/index');) that loads application/view/index/index.php, which is basically
-            this text you are reading right now.
-        </p>
+        <img class="icon" src="http://www.semzee.dvc-icta.nl/pic/romance.png" alt="">
+        <img class="icon" src="http://www.semzee.dvc-icta.nl/pic/romance.png" alt="">
+        <img class="icon" src="http://www.semzee.dvc-icta.nl/pic/romance.png" alt="">
+        <br>
+        <img class="icon" src="http://www.semzee.dvc-icta.nl/pic/romance.png" alt="">
+        <img class="icon" src="http://www.semzee.dvc-icta.nl/pic/romance.png" alt="">
+        <br>
+        <img class="icon" src="http://www.semzee.dvc-icta.nl/pic/romance.png" alt="">
+        <img class="icon" src="http://www.semzee.dvc-icta.nl/pic/romance.png" alt="">
+        <img class="icon" src="http://www.semzee.dvc-icta.nl/pic/romance.png" alt="">
     </div>
     <div class="box" id="about-us">
-        <h2>About us</h2>
+        <h1>About us</h1>
         <img class="" src="http://www.semzee.dvc-icta.nl/pic/tracer-icon.png" alt="">
         <img class="" src="http://www.semzee.dvc-icta.nl/pic/tracer-icon.png" alt="">
     </div>
     
 </div>
-<img src="http://www.semzee.dvc-icta.nl/pic/asunabg.png" alt="">
