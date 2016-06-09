@@ -17,6 +17,7 @@
     <div class="box" id="about-us">
         <h1>About us</h1>
         <div class="team" id="killian">
+            <img class="" src="http://www.semzee.dvc-icta.nl/pic/mercy-icon.png" alt="">
             <h3>LightningLuxio</h3>
         </div>
         <div class="team" id="sem">
