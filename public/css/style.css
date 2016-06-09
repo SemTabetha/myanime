@@ -102,11 +102,24 @@ body {
     background-color: #222;
     color: #fff;
 }
-
+.container h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+#icons{
+    text-align: center;
+    padding-top: 30px; 
+}
+#icons img{
+    width:100px;
+    margin: 0 10% 0 10%;
+}
 #about-us{
     text-align: center;
 }
-
+#about-us img{
+    margin: 0 10%;
+}
 
 /* navigation dropdown menu */
 .navigation, .navigation-submenu {
@@ -464,3 +477,4 @@ body {
     padding: 2% 2% 2% 2%;
     width: 96%;
 }
+
