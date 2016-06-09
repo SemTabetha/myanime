@@ -117,8 +117,12 @@ body {
 #about-us{
     text-align: center;
 }
-#about-us img{
-    margin: 0 10%;
+#about-us h1{
+    padding-bottom: 20px;
+}
+.team{
+   display: inline-block;
+   margin: 0 10%;
 }
 
 /* navigation dropdown menu */
@@ -463,13 +467,12 @@ body {
 .register-logo{
     width: 25%;
     background-color: #fff;
-    margin-bottom:-36px;
+    margin-top: 90px;
     padding:0;
     border-left: 2px black solid;
     border-top: 2px black solid;
     border-right: 2px black solid;
     box-shadow: 4px 0px 5px gray;
-    margin-top:6%;
     margin-left: 10%;
 }
 
