@@ -13,9 +13,10 @@ body {
     background-repeat: no-repeat;
 }
 
+/*test gumi to right, just to be able to pull version 2*/
 .gumi img{
     position: fixed;
-    left: 0;
+    right: 0;
     bottom: 0;
 }
 .wrapper {
@@ -481,3 +482,11 @@ body {
     width: 96%;
 }
 
+.chat-window{
+    position: fixed;
+    left: 0;
+    bottom: 60px;
+    width: 300px;
+    height: 700px;
+    background-color: pink;
+}
