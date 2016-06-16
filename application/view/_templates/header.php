@@ -67,7 +67,7 @@
                     <a href="<?php echo Config::get('URL'); ?>dashboard/index">Dashboard</a>
                 </li>
                 <li <?php if (View::checkForActiveController($filename, "note")) { echo ' class="active" '; } ?> >
-                    <a href="<?php echo Config::get('URL'); ?>note/index">My Notes</a>
+                    <a href="<?php echo Config::get('URL'); ?>note/index">My Posts</a>
                 </li>
                     
             <?php } else { ?>

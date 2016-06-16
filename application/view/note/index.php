@@ -9,7 +9,6 @@
         <p>
             <form method="post" action="<?php echo Config::get('URL');?>note/create">
                 <label>Text of new note: </label><input type="text" name="note_text" />
-                <label>Title: </label><input type="text" name="note_text" />
                 <input type="submit" value='Create this note' autocomplete="off" />
             </form>
         </p>

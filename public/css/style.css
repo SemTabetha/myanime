@@ -65,7 +65,7 @@ body {
     color: #454545;
 }
 .container table {
-    font-size: 11px;
+    font-size: 16px;
     margin-top: 20px;
 }
 .container table thead p {
@@ -74,6 +74,12 @@ body {
 }
 .container table tbody p {
     padding: 4px 10px;
+}
+.container table td a{
+    padding: 4px 80px;
+}
+.container table td a:hover{
+    font-size: 17px;
 }
 .container .box {
     border-top: 1px solid #ddd;
@@ -108,6 +114,7 @@ body {
     text-align: center;
     text-transform: uppercase;
 }
+
 #icons{
     text-align: center;
     padding-top: 30px; 
@@ -126,6 +133,7 @@ body {
    display: inline-block;
    margin: 0 10%;
 }
+
 
 /* navigation dropdown menu */
 .navigation, .navigation-submenu {
@@ -210,9 +218,12 @@ body {
 }
 
 /* overview */
+.overview-table{
+    margin-left:30%;
+}
 .overview-table img {
-    width: 40px;
-    height: 40px;
+    width: 100px;
+    height: 100px;
 }
 
 /* feedback boxes */
