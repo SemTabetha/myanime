@@ -20,7 +20,7 @@ class View
                 $this->{$key} = $value;
             }
         }
-
+        
         require Config::get('PATH_VIEW') . '_templates/header.php';
         require Config::get('PATH_VIEW') . $filename . '.php';
         require Config::get('PATH_VIEW') . '_templates/footer.php';
@@ -70,6 +70,28 @@ class View
 
         require Config::get('PATH_VIEW') . $filename . '.php';
     }
+
+
+    /*same like render(), but includes other header and footer files*/
+    public function renderRegisterHeaderAndFooter($filename, $data = null)
+    {
+        if ($data) {
+            foreach ($data as $key => $value) {
+                $this->{$key} = $value;
+            }
+        }
+
+        require Config::get('PATH_VIEW') . '_templates/registerheader.php';
+        require Config::get('PATH_VIEW') . $filename . '.php';
+        require Config::get('PATH_VIEW') . '_templates/registerfooter.php';
+    }
+
+
+
+
+
+
+
 
     /**
      * Renders pure JSON to the browser, useful for API construction

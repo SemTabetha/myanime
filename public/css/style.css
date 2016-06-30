@@ -2,50 +2,90 @@ body {
     font-family: Arial, sans-serif;
     font-weight: 400;
     font-size: 14px;
-    background-color: rgb(230, 230, 230);
+    background: repeating-linear-gradient(
+    45deg,
+    #f2f2f2,
+    #f2f2f2 10px,
+    #fff 10px,
+    #fff 20px
+    );
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/*test gumi to right, just to be able to pull version 2*/
+.gumi img{
+    position: fixed;
+    right: 0;
+    bottom: 0;
 }
 .wrapper {
     width: 60%;
     margin: 0 auto;
-    background-color: grey;
 }
 
 .logo{
-    width: 30%;
-    background-color: purple;
-    text-align: center;
-    margin:0;
+    width: 25%;
+    background-color: #fff;
+    margin-bottom:-36px;
     padding:0;
+    border-left: 2px #000 solid;
+    border-top: 2px #000 solid;
+    border-right: 2px #000 solid;
+    box-shadow: 4px 0px 5px gray;
+    margin-left:2%;
+}
+
+.logo img {
+    padding: 2% 2% 2% 2%;
+    width: 96%;
+}
+
+.banner img{
+    margin-left: -2px;
+    border: 2px #000 solid;
+    box-shadow: 4px 4px 5px gray;
+    height: 350px;
+    width:100%;
+    z-index: 5;
+    margin-bottom: 15px;
 }
     /* To keep this project compact, we show a base64-encoded image, not a real file. */
     /* Excellent base64-encoders and more information here: http://base64image.org and http://www.base64-image.de */
     
 .container {
     max-width: 100%;
-    border: 1px solid #ccc;
+    border: 1px solid #000;
     padding: 20px;
-    margin: 0 0 30px 0;
-    background-color: darkgrey;
-
+    margin: 0 0 0 0;
+    background-color: #fff;
+    z-index: 10;
 }
 .container a {
     color: #454545;
 }
 .container table {
-    font-size: 11px;
+    font-size: 16px;
     margin-top: 20px;
 }
-.container table thead td {
+.container table thead p {
     background-color: #f5f5f5;
     padding: 4px 10px;
 }
-.container table tbody td {
+.container table tbody p {
     padding: 4px 10px;
+}
+.container table td a{
+    padding: 4px 80px;
+}
+.container table td a:hover{
+    font-size: 17px;
 }
 .container .box {
     border-top: 1px solid #ddd;
     padding-top: 10px;
     margin-top: 30px;
+    text-align: center;
 }
 .container input {
     background-color: #f5f5f5;
@@ -70,7 +110,29 @@ body {
     background-color: #222;
     color: #fff;
 }
+.container h1{
+    text-align: center;
+    text-transform: uppercase;
+}
 
+#icons{
+    text-align: center;
+    padding-top: 30px; 
+}
+#icons img{
+    width:100px;
+    margin: 0 10% 0 10%;
+}
+#about-us{
+    text-align: center;
+}
+#about-us h1{
+    padding-bottom: 20px;
+}
+.team{
+   display: inline-block;
+   margin: 0 10%;
+}
 
 
 /* navigation dropdown menu */
@@ -78,7 +140,7 @@ body {
     display: inline-block;
     list-style: none;
     /* btw this is necessary to remove most browsers's "hidden" default <ul> intent */
-    margin: 0;
+    margin: 0 1% 0 0;
     padding: 0;
     float: right;
 }
@@ -86,18 +148,34 @@ body {
 .navigation {
 }
 .navigation.right {
+    margin-top:-3px;
     position: fixed;
     top: 0px;
-    left:86%;
+    right: 4%;
     z-index:10;
 }
-#button-acc{
-    padding: 10px 43px 10px 43px;
+.navigation-log {
+    margin-top:-3px;
+    position: fixed;
+    top: 0px;
+    right: 10%;
+    z-index:10;
 }
-/*test*/
+.navigation-reg {
+    margin-top:-3px;
+    position: fixed;
+    top: 0px;
+    right: 5%;
+    z-index:10;
+}
+
+#button-acc{
+    padding: 10px 44px 10px 44px;
+}
 .navigation li {
     float: left;
     margin-right: 5px;
+    margin-bottom: 0;
 }
 .navigation .navigation-submenu {
     display: none;
@@ -106,8 +184,9 @@ body {
     display: block;
     text-decoration: none;
     padding: 10px 15px;
-    border: 2px solid #454545;
-    background: #454545;
+    border: 2px #000 solid;
+    margin-bottom: -2px;
+    background: #000;
     color: #fff;
     float:none;
     font-size: 10px;
@@ -131,17 +210,20 @@ body {
 
 .navigation > li.active a {
     background: #fff;
-    color: #454545;
+    color: #000;
 }
 .navigation > li.active li a {
-    background: #454545;
+    background: #000;
     color: #fff;
 }
 
 /* overview */
+.overview-table{
+    margin-left:30%;
+}
 .overview-table img {
-    width: 40px;
-    height: 40px;
+    width: 100px;
+    height: 100px;
 }
 
 /* feedback boxes */
@@ -177,9 +259,9 @@ body {
 
 .login-box {
     display: table-cell;
-    margin: 0;
+    margin-left: 25%;
     color: #777;
-    background-color: #f4f3f1;
+    background-color: #fff;
     padding: 20px 50px 45px 50px;
     width: 49%;
     box-sizing: border-box;
@@ -202,9 +284,9 @@ body {
     /*text-transform: uppercase;*/
 }
 .login-box input[type="submit"] {
-    color: #777;
-    background-color: transparent;
-    border: 2px solid #777;
+    color:  white;
+    background-color: rgb(135,222,48);
+    border: 2px solid gray;
     padding: 15px 20px;
     margin-bottom: 10px;
     display: block;
@@ -271,4 +353,237 @@ body {
 /* error page */
 .red-text {
     color: red;
+}
+
+/*footer*/
+
+.footer{
+    background: repeating-linear-gradient(
+    45deg,
+    rgb(135,222,48),
+    rgb(135,222,48) 10px,
+    #fff 10px,
+    #fff 20px
+    );
+    height: 50px;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.footertext{
+    text-decoration: none;
+    color: #000;
+    font-size: 85%;
+    float: left;
+    margin: 16px 20px 0 43%;
+}
+
+.copyright{
+    text-decoration: none;
+    color: #000;
+    font-size: 85%;
+    margin: 0;
+    padding-top: 16px;
+}
+
+
+/*create account box, not same as register box*/
+.create-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    display: table-cell;
+    color: white;
+    background-color: black;
+    padding: 20px 50px 45px 50px;
+    width: 50%;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+.create-box h2 {
+    color: white;
+}
+.create-box input[type="text"],
+.create-box input[type="password"] {
+    font-family: Arial, sans-serif;
+    color: #252525;
+    background-color: #ffffff;
+    padding: 15px 15px;
+    margin-bottom: 20px;
+    display: block;
+    width: 358px;
+    /*border: 2px solid rgb(135,222,48);*/
+    
+}
+
+.names{
+    width: 391px;    
+}
+
+.security{
+    float: right;
+    /*border: 2px solid green;*/
+    width: 391px;
+    margin-top: -207px;
+}
+
+.left{
+
+}
+
+.right{
+
+}
+
+.create-box input[type="submit"] {
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    color: white;
+    background-color: rgb(135,222,48);
+    padding: 30px 25px;
+    margin-top: 4.5%;
+    margin-left: 49%;
+    display: block;
+    width: 41%;
+    border-color: black;
+    border-radius: 20px;
+}
+.create-box input[type="submit"]:hover {
+    color: white;
+    border: 2px solid white;
+    background-color: rgb(102, 176, 28);
+}
+
+.create-box a{
+    color: yellow;
+}
+
+.captcha{
+    width: 391px;
+    height: 100px;
+    margin-bottom: 5px;
+}
+
+.captcha-img{
+   width: 100%;
+   height: 100%;
+}
+
+.create-box ::-webkit-input-placeholder { color: #777; opacity: 0.5; }
+.create-box ::-moz-placeholder { color: #777; opacity: 0.5; }
+.create-box :-ms-input-placeholder { color: #777; opacity: 0.5; }
+.create-box input:-moz-placeholder { color: #777; opacity: 0.5; }
+
+.register-logo{
+    width: 25%;
+    background-color: #fff;
+    margin-top: 90px;
+    padding:0;
+    border-left: 2px black solid;
+    border-top: 2px black solid;
+    border-right: 2px black solid;
+    box-shadow: 4px 0px 5px gray;
+    margin-left: 10%;
+}
+
+.register-logo img {
+    padding: 2% 2% 2% 2%;
+    width: 96%;
+}
+
+.chat-window{
+    position: fixed;
+    left: 0;
+    bottom: 60px;
+    width: 17%;
+    height: 700px;
+    background-color: rgb(135,222,48);
+}
+
+/*genre icon list hover effect*/
+ul.icon-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+ul.icon-list li {
+  display: inline-block;
+  margin: 0 2% 5% 2%;
+  position: relative;
+  width: 150px;
+}
+
+ul.icon-list li img{
+
+}
+
+span.icon-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  left: 0;
+  position: absolute;
+  bottom: 0;
+  width: 150px;
+}
+
+span.icon-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+span.icon-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  left: 0;
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+}
+
+ul.icon-list li:hover span.icon-content {
+  opacity: 1;
+}
+
+span.icon-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  left: 0;
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+/* user profile page*/
+
+.user-avatar{
+    border: 1px solid green;
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    margin: auto;
+    margin-top: 10%;
+    border-radius: 50%;
+    
+}
+
+.img-avatar{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
 }

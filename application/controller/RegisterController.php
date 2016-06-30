@@ -25,7 +25,7 @@ class RegisterController extends Controller
         if (LoginModel::isUserLoggedIn()) {
             Redirect::home();
         } else {
-            $this->View->render('register/index');
+            $this->View->renderRegisterHeaderAndFooter('register/index');
         }
     }
 

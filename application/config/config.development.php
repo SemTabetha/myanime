@@ -65,7 +65,7 @@ return array(
 	'DB_HOST' => '127.0.0.1',
 	'DB_NAME' => 'huge',
 	'DB_USER' => 'root',
-	'DB_PASS' => '',
+	'DB_PASS' => 'LL1583XHGJN7',
 	'DB_PORT' => '3306',
 	'DB_CHARSET' => 'utf8',
 	/**
@@ -110,7 +110,7 @@ return array(
 	'USE_GRAVATAR' => false,
 	'GRAVATAR_DEFAULT_IMAGESET' => 'mm',
 	'GRAVATAR_RATING' => 'pg',
-	'AVATAR_SIZE' => 44,
+	'AVATAR_SIZE' => 250,
 	'AVATAR_JPEG_QUALITY' => 85,
 	'AVATAR_DEFAULT_IMAGE' => 'default.jpg',
     /**

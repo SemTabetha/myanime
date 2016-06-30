@@ -1,5 +1,5 @@
 <div class="container">
-    <h1>UserController/editUserEmail</h1>
+    <h1>Edit user e-mail</h1>
 
     <!-- echo out the system feedback (error and success messages) -->
     <?php $this->renderFeedbackMessages(); ?>
