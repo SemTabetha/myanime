@@ -157,7 +157,7 @@ class AvatarModel
      *
      * @return bool success state
      */
-    public static function resizeAvatarImage($source_image, $destination, $final_width = 250, $final_height = 250)
+    public static function resizeAvatarImage($source_image, $destination, $final_width = 44, $final_height = 44)
     {
         $imageData = getimagesize($source_image);
         $width = $imageData[0];
